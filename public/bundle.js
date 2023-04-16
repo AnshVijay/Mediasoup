@@ -20556,7 +20556,7 @@ const goProduce = async () => {
   }
 
   const goCreateTransport = () => {
-    isProducer ? createSendTransport : createRecvTransport
+    isProducer ? createSendTransport() : createRecvTransport()
   }
 
   const createDevice = async () => {
